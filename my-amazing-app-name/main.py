@@ -1,12 +1,7 @@
-from pathlib import Path
-
-import cv2
 import numpy as np
 
 from waggle.plugin import Plugin
-
-
-IMAGE_PATH = Path(__file__).with_name("example.jpg")
+from waggle.data.vision import Camera
 
 
 def compute_mean_color(image):
@@ -14,18 +9,22 @@ def compute_mean_color(image):
 
 
 def main():
-    image_bgr = cv2.imread(str(IMAGE_PATH))
-    if image_bgr is None:
-        raise FileNotFoundError(f"Could not read image: {IMAGE_PATH}")
-
-    image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
-    mean_color = compute_mean_color(image_rgb)
-
     with Plugin() as plugin:
-        plugin.publish("color.mean.r", mean_color[0])
-        plugin.publish("color.mean.g", mean_color[1])
-        plugin.publish("color.mean.b", mean_color[2])
-        plugin.upload_file(str(IMAGE_PATH))
+        # open camera and take snapshot
+        with Camera("left") as camera:
+            snapshot = camera.snapshot()
+
+        # compute mean color
+        mean_color = compute_mean_color(snapshot.data)
+
+        # publish mean color
+        plugin.publish("color.mean.r", mean_color[0], timestamp=snapshot.timestamp)
+        plugin.publish("color.mean.g", mean_color[1], timestamp=snapshot.timestamp)
+        plugin.publish("color.mean.b", mean_color[2], timestamp=snapshot.timestamp)
+
+        # save and upload image
+        snapshot.save("snapshot.jpg")
+        plugin.upload_file("snapshot.jpg", timestamp=snapshot.timestamp)
 
 
 if __name__ == "__main__":
