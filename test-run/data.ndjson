@@ -1,0 +1,15 @@
+{"meta":{},"name":"color.mean.r","timestamp":"2026-07-20T16:39:20.572637000","value":123.71260030864198}
+{"meta":{},"name":"color.mean.g","timestamp":"2026-07-20T16:39:20.572637000","value":103.96470100308642}
+{"meta":{},"name":"color.mean.b","timestamp":"2026-07-20T16:39:20.572637000","value":96.02737316743827}
+{"meta":{},"name":"color.mean.r","timestamp":"2026-07-20T16:39:56.503985000","value":0.09922646604938272}
+{"meta":{},"name":"color.mean.g","timestamp":"2026-07-20T16:39:56.503985000","value":0.08005979938271605}
+{"meta":{},"name":"color.mean.b","timestamp":"2026-07-20T16:39:56.503985000","value":0.006318962191358025}
+{"meta":{"filename":"snapshot.jpg"},"name":"upload","timestamp":"2026-07-20T16:39:56.503985000","value":"/Users/clementnunes/projects/sage-app-template/my-amazing-app-name/test-run/uploads/1784583596503985000-snapshot.jpg"}
+{"meta":{},"name":"color.mean.r","timestamp":"2026-07-20T16:40:19.011247000","value":1.263488136574074}
+{"meta":{},"name":"color.mean.g","timestamp":"2026-07-20T16:40:19.011247000","value":1.0624498456790124}
+{"meta":{},"name":"color.mean.b","timestamp":"2026-07-20T16:40:19.011247000","value":0.5468860918209877}
+{"meta":{"filename":"snapshot.jpg"},"name":"upload","timestamp":"2026-07-20T16:40:19.011247000","value":"/Users/clementnunes/projects/sage-app-template/my-amazing-app-name/test-run/uploads/1784583619011247000-snapshot.jpg"}
+{"meta":{},"name":"color.mean.r","timestamp":"2026-07-20T16:40:22.494029000","value":0.1773611111111111}
+{"meta":{},"name":"color.mean.g","timestamp":"2026-07-20T16:40:22.494029000","value":0.18487702546296297}
+{"meta":{},"name":"color.mean.b","timestamp":"2026-07-20T16:40:22.494029000","value":0.07599922839506174}
+{"meta":{"filename":"snapshot.jpg"},"name":"upload","timestamp":"2026-07-20T16:40:22.494029000","value":"/Users/clementnunes/projects/sage-app-template/my-amazing-app-name/test-run/uploads/1784583622494029000-snapshot.jpg"}
