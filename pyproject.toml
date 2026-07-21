@@ -1,12 +1,11 @@
 [project]
 name = "sage-app-template"
-version = "0.2.0"
-description = "A Sage edge app that publishes the mean color of a camera snapshot"
+version = "0.1.0"
+description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.5.1",
     "opencv-python>=5.0.0.93",
-    "pywaggle[all]==0.56.0",
     "sage-data-client>=0.9.1",
 ]

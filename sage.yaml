@@ -1,12 +1,12 @@
 name: "my-amazing-app-name"
-version: "0.2.0"
-description: "Captures a camera image, publishes its mean RGB color, and uploads the snapshot."
-keywords: "computer vision, camera, mean color"
+version: "0.1.3"
+description: "My really amazing app!"
+keywords: ""
 authors: "cnunes"
 collaborators: ""
 funding: ""
 license: ""
-homepage: "https://github.com/NunesClement/sage-app-template"
+homepage: "https://github.com/nunesclement/sage-app-template"
 source:
   architectures:
     - "linux/amd64"
