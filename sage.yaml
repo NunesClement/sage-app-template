@@ -6,7 +6,6 @@ authors: "cnunes"
 collaborators: ""
 funding: ""
 license: ""
-directory: "/my-amazing-app-name"
 homepage: "https://github.com/nunesclement/sage-app-template"
 source:
   architectures:
