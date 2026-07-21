@@ -10,8 +10,8 @@ wheels/
 .venv
 
 # Local camera captures and Sage test output
-my-amazing-app-name/snapshot.jpg
-my-amazing-app-name/test-run/
+snapshot.jpg
+test-run/
 
 # Local secrets
 .env

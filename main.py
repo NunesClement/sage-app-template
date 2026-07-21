@@ -1,14 +1,16 @@
 import numpy as np
 
-from waggle.plugin import Plugin
 from waggle.data.vision import Camera
+from waggle.plugin import Plugin
 
 
 def compute_mean_color(image):
+    """Return the channel-wise mean for an image."""
     return np.mean(image, (0, 1)).astype(float)
 
 
 def main():
+    """Capture, analyze, publish, and upload one image from the left camera."""
     with Plugin() as plugin:
         # open camera and take snapshot
         with Camera("left") as camera:
